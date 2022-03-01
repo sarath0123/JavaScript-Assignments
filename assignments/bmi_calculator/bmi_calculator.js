@@ -11,7 +11,6 @@ function BMICalculator(mass, height) {
         let BMI = mass / (height * height);
         return BMI;
     }
-console.log(BMICalculator(mass, height));
 }
 
 module.exports = BMICalculator;
