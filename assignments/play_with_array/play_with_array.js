@@ -27,11 +27,12 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
+   ans=[];
    for(let i=0; i<arr.length; i++)
    {
-       arr[i]=arr[i]*n;
+       ans.push(arr[i]*n);
    }
-   return arr
+   return ans
 }
 
 function removeNthElement(arr, n) {
