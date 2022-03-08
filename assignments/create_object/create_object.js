@@ -14,7 +14,6 @@ function CreateObject(arr) {
             values.push(arr[i]);
         }
     }
-    
     keys.forEach((key, i) => d[key] = values[i]);
     return d
 }
