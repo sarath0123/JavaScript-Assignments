@@ -6,6 +6,7 @@ function CreateObject(arr) {
     {
         d[arr[i]]=arr[i+1];
     }
+
     return d
 
 }
