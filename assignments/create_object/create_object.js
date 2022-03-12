@@ -1,22 +1,13 @@
 function CreateObject(arr) {
     // Write your code here
-    var keys = [];
-    var values = [];
-    var d={};
-    for(let i=0; i<arr.length; i++)
-    {
-        if(i%2==0)
-        {
-            keys.push(arr[i]);
-        }
-        else
-        {
-            values.push(arr[i]);
-        }
-    }
     
-    keys.forEach((key, i) => d[key] = values[i]);
+    var d={};
+    for(let i=0; i<arr.length; i=i+2)
+    {
+        d[arr[i]]=arr[i+1];
+    }
     return d
+
 }
 
 module.exports = CreateObject;
