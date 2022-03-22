@@ -20,10 +20,19 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
+<<<<<<< todo_list_with_actual_api
 
     arr=arr.map(x => x*n)
     return arr    
    
+=======
+   ans=[];
+   for(let i=0; i<arr.length; i++)
+   {
+       ans.push(arr[i]*n);
+   }
+   return ans
+>>>>>>> master
 }
 
 function removeNthElement(arr, n) {

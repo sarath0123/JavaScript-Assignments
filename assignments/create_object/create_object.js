@@ -5,6 +5,7 @@ function CreateObject(arr) {
     for(let i=0; i<arr.length; i=i+2){
         d[arr[i]]=arr[i+1];
     }
+
     return d
 }
 
