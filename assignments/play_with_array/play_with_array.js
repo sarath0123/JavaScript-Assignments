@@ -7,16 +7,9 @@ function getEven(arr) {
 
         Write you code below
     */
-    let ans=[];
-    for(let i=0; i<arr.length; i++)
-   {
-       if (arr[i]%2==0)
-       {
-           ans.push(arr[i]);
-       }
-   }
-   return ans
-
+    arr= arr.filter(x => x%2==0)
+    return arr
+    
 }
 
 function multiplyByN(arr, n) {
@@ -27,11 +20,10 @@ function multiplyByN(arr, n) {
             Output: [3,9,13,165]
         Write you code below
     */
-   for(let i=0; i<arr.length; i++)
-   {
-       arr[i]=arr[i]*n;
-   }
-   return arr
+
+    arr=arr.map(x => x*n)
+    return arr    
+   
 }
 
 function removeNthElement(arr, n) {
@@ -42,11 +34,10 @@ function removeNthElement(arr, n) {
             Output: [1,3,4,7]
         Write you code below
     */
-    let ans=[];
+    var ans=[];
     for(let i=0; i<arr.length; i++)
     {
-        if (i!=n)
-        {
+        if (i!=n){
             ans.push(arr[i]);
         }
     }

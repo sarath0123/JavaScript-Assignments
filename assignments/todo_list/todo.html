@@ -1,12 +1,62 @@
 <html>
     <head>
-        <title>Todo List</title>
+        <title>Todo List with API</title>
+        <style>
+
+            .box1{
+                width: 100%;
+            }
+
+            .head{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            button{
+                width: 300px;
+                height: 35px;
+                border-radius: 20px;
+            }
+
+            button:hover{
+                background-color: darkolivegreen;
+            }
+            button:focus {     
+                background-color: green;
+            }
+            
+            #box{
+                width: 100%;
+                display: block;
+            }
+            .whole_value{
+                padding-left: 20px;
+                border: 1px solid;
+                margin: 1%;
+                width: 20%;
+                display: inline-block;
+                justify-content:flex-end;
+            } 
+
+
+        </style>
     </head>
-    <body>
+    <body style="background-color: cadetblue">
         <div>
-            <input type='text' name='todo_input'>
-            <button type='submit'>Add Todo</button>
-            <div class='todos'></div>
+            
+        <div class="box1">
+            <header class="head">
+                <button class="all" type="submit">All</button>
+                <button class="completed" type="submit">Completed</button>
+                <button class="pending" type="submit">Pending</button>
+            </header>
+            <div id="box">
+                
+            </div>
+        </div>
         </div>
     </body>
     <script src='./script.js'></script>
